@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package org.fc.brewchain.p22p.pbgens;
+package org.fok.p22p.model;
 import "google/protobuf/any.proto";
 
 enum PModule {
@@ -144,6 +144,9 @@ message PVBase{
 	string from_bcuid = 31;//从哪个节点名称来的
 	string ext_type = 32;//
 	string nid = 50;//网络ID
+	
+	// int64 count = 60;
+	// int32 decimals = 61;
 	
 	string sign = 100; //对上述数据的签名结果
 }
